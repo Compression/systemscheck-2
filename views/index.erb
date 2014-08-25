@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NFL standings</title>
+    <link href="/public/home.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>NFL teams and their standings</h1>
+
+    <ul>
+      <% @teams.each do |name| %>
+
+        <li> <%= name %> Wins: <%= @wins[@i] %> Losses: <%= @losses[@i] %> </a> </li>
+         <% @i +=  1 %>
+      <% end %>
+    </ul>
+  </body>
+</html>
